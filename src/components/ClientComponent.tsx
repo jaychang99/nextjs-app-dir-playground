@@ -14,6 +14,8 @@ const ClientComponent = () => {
       <h1>ClientComponent</h1>
       <p>Count: {count}</p>
       <button onClick={() => setCount(count + 1)}>Increment</button>
+      {/* below server component uses `fs`, which is only available on server. (nodeJS) */}
+      {/* any attempts to use this component on client will result in error. */}
       {/* <ServerComponent /> */}
     </div>
   );
