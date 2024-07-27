@@ -1,5 +1,4 @@
 'use client';
-import ServerComponent from '@/components/ServerComponent';
 import { useState } from 'react';
 
 const ClientComponent = () => {
@@ -15,7 +14,7 @@ const ClientComponent = () => {
       <h1>ClientComponent</h1>
       <p>Count: {count}</p>
       <button onClick={() => setCount(count + 1)}>Increment</button>
-      <ServerComponent />
+      {/* <ServerComponent /> */}
     </div>
   );
 };
